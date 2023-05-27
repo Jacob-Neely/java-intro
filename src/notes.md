@@ -16,6 +16,6 @@ boolean 1 bit Stores true or false values
 
 char 2 bytes Stores a single character/letter or ASCII values
 
-1:11:55
+1:36:43
 
 Java Full Course for free
