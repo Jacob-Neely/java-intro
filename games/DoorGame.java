@@ -9,11 +9,12 @@ public class DoorGame {
     final String WELCOME_MESSAGE = "Welcome to Door Game";
     final String UpdateTitle = "Update";
     final String Title = "Door Game";
-    final String Failed = "You failed";
+    final String Failed = "You failed!";
     final String Win = "You win!";
     final String Error = "Error";
     final String Secret = "Welcome to door -2 nothing much is going on here so I'll just give you a win";
     final String Error2 = "No Funny number";
+    final String LauncherTitle = "Door Game Launcher";
 
     // JOptionPane message types
     final int X_Mark = 0;
@@ -21,7 +22,7 @@ public class DoorGame {
     final int WarningMark = 2;
     final int QuestionMark = 3;
 
-    JOptionPane.showMessageDialog(null, WELCOME_MESSAGE, Title, InfoMark);
+    JOptionPane.showMessageDialog(null, WELCOME_MESSAGE, LauncherTitle, InfoMark);
     // JOptionPane.showMessageDialog(null, " ", game, 2);
 
     String pickadoor = JOptionPane.showInputDialog(null, "Updates are soon to appear!", UpdateTitle, InfoMark);
@@ -39,10 +40,10 @@ public class DoorGame {
         JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
         break;
       case "2":
-        JOptionPane.showMessageDialog(null, Win, Title, QuestionMark);
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
         break;
       case "3":
-        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        JOptionPane.showMessageDialog(null, Win, Title, QuestionMark);
         break;
       case "-2":
         JOptionPane.showMessageDialog(null, Secret, Title, QuestionMark);
