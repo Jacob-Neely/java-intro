@@ -35,7 +35,7 @@ public class Door {
                 JOptionPane.showMessageDialog(null, Failed, Title, 2);
                 break;
             case "3":
-                JOptionPane.showMessageDialog(null, Win, Title, 3);
+                JOptionPane.showMessageDialog(null, Correct, Title, 3);
                 break;
             default:
                 JOptionPane.showMessageDialog(null, Error, Title, 0);
@@ -43,12 +43,6 @@ public class Door {
         }
 
         JOptionPane.showMessageDialog(null,
-                "You have passed the 3 doors and continued your journey through the cave and end up in a bit of trouble.",
-                Title, 3);
-
-        JOptionPane.showMessageDialog(null,
                 "Thanks for playing the Demo!", Title, 1);
-
-        JOptionPane.showMessageDialog(null, Error, LauncherTitle, 0);
     }
 }

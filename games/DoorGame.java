@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 public class DoorGame {
@@ -7,7 +6,7 @@ public class DoorGame {
   public static void main(String[] args) {
     // Messages
     final String WELCOME_MESSAGE = "Welcome to Door Game";
-    final String UpdateTitle = "Update";
+    final String UpdateTitle = "Update 1.1";
     final String Title = "Door Game";
     final String Failed = "You failed!";
     final String Win = "You win!";
@@ -25,7 +24,8 @@ public class DoorGame {
     JOptionPane.showMessageDialog(null, WELCOME_MESSAGE, LauncherTitle, InfoMark);
     // JOptionPane.showMessageDialog(null, " ", game, 2);
 
-    String pickadoor = JOptionPane.showInputDialog(null, "Updates are soon to appear!", UpdateTitle, InfoMark);
+    String pickadoor = JOptionPane.showInputDialog(null, "Update: You can now type instead of numbers now words!",
+        UpdateTitle, InfoMark);
 
     while (pickadoor.isBlank()) {
       pickadoor = JOptionPane.showInputDialog(null, "You came accross  3 doors pick wisely\nPick a door", Title,
@@ -53,6 +53,32 @@ public class DoorGame {
         break;
       case "420":
         JOptionPane.showMessageDialog(null, Error2, Title, WarningMark);
+        break;
+      case "One":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "Two":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "Three":
+        JOptionPane.showMessageDialog(null, Win, Title, QuestionMark);
+        break;
+      case "one":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "two":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "three":
+        JOptionPane.showMessageDialog(null, Win, Title, QuestionMark);
+      case "ONE":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "TWO":
+        JOptionPane.showMessageDialog(null, Failed, Title, WarningMark);
+        break;
+      case "THREE":
+        JOptionPane.showMessageDialog(null, Win, Title, QuestionMark);
       default:
         JOptionPane.showMessageDialog(null, Error, Title, X_Mark);
         pickadoor = JOptionPane.showInputDialog(null, "You came accross  3 doors pick wisely\nPick a door", Title,
